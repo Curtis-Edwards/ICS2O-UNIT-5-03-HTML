@@ -25,17 +25,21 @@ function buttonClicked() {
    if (over17.checked >= true) {
     document.getElementById("age").innerHTML =
     "You can watch R rated movies."
+    console.log("Age is over 17")
 
   } else if (over13.checked >= true) {
     document.getElementById("age").innerHTML =
   "You can watch PG rated movies."
+  console.log("Age is over 13")
 
   } else if (over5.checked >= true) {
     document.getElementById("age").innerHTML =
   "You can watch G rated movies."
+  console.log("Age is over 5")
 
   } else {
     document.getElementById("age").innerHTML =
   "You can't watch any movies."
+  console.log("Age is too low")
   }
 }
